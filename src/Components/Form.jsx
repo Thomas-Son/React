@@ -1,5 +1,7 @@
 import { useReducer, useState, Fragment } from "react";
 import { v4 as uuidv4 } from 'uuid';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 function Form() {
 
@@ -67,7 +69,7 @@ function Form() {
                             {
                                 dataLS.map(data =>
                                     <Fragment key={Math.random()}>
-                                        <dt>Message de : {data.alias} le {data.date} à {data.time}</dt>
+                                        <dt>Message de : <FontAwesomeIcon icon={faUser} /> {data.alias} le {data.date} à {data.time}</dt>
                                         <dd>dans la catégorie {data.category}</dd>
                                         <dd>{data.msg}</dd>
                                         <div className="divider"></div>
