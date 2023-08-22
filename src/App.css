@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 30px auto;
+}
+
+input:not([type="submit"]),
+textarea {
+  margin-bottom: 12px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+select,
+option {
+  padding: 5px;
+}
+
+[type="submit"] {
+  width: fit-content;
+  margin: 10px auto;
+  padding: 7px 10px;
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: royalblue;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.divider {
+  height: 2px;
+  background-color: orangered;
+  width: 50px;
+  margin: 8px auto 8px;
+}
+
+dl {
+  text-align: center;
+}
+
+dd::before {
+  content: "➡️";
+}
